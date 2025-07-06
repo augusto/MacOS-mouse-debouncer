@@ -8,6 +8,11 @@ My left button switch started to malfunction and rather than getting create wast
 ```bash
 git clone https://github.com/augusto/MacOS-mouse-debouncer.git
 cd MacOS-mouse-debouncer
-./build
-./debounce
+./build.sh
+open ./build/MouseDebouncer.app
+```
+
+## See logs with
+```bash
+/usr/bin/log stream --info --debug --predicate 'process == "MouseDebouncer"'
 ```
